@@ -1,0 +1,1 @@
+# macchina_a_stati_PIC
