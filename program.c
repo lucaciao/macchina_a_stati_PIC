@@ -22,7 +22,7 @@ void main (void)
     //supponiamo un oscillatore a 4Mzh
     //4.000.000 / 4= 1.000.000 /2 prescaler = 500.000
     //configura TIMER0 (16 bit, interrupt enabled)
-    Opentimer0 (TIMER_INT_ON & T0_16BIT & T0_SOURCE_INT & T0_DEGE_FALL & T0_PS_1_2);
+    OpenTimer0 (TIMER_INT_ON & T0_16BIT & T0_SOURCE_INT & T0_EDGE_FALL & T0_PS_1_2);
     WriteTimer0 (TIMER0_VALUE_100ms);
     while (1)
     {
