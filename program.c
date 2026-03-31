@@ -29,7 +29,7 @@ void main (void)
         switch (stato)
         {
         case STATO_ATTESA_P1: //verifica se è stato premuto il pulsante 1
-            if (PULSANTE1 ==0)
+            if (PULSANTE1 == 0)
             {
                 USCITA = 1;
                 ContaTempo_ds = DURATA_IMPULSO1_ds;
@@ -79,7 +79,7 @@ void InterruptVectorHigh ()
     {
         INTCONbits.TMR0IF=0;
         WriteTimer0(TIMER0_VALUE_100ms);
-        if (ContaTempo_ds >= 0)
+        if (ContaTempo_ds > 0)
         {
             ContaTempo_ds--;
         }
